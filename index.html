@@ -23,7 +23,7 @@
             <a href="./index.html" class="logo-header"><span>Web</span>Studio</a>
             <nav class="header-nav">
                 <ul class="header-list list">
-                    <li class="header-item"><a href="./index.html" class="header-links link">Studio</a></li>
+                    <li class="header-item current"><a href="./index.html" class="header-links link">Studio</a></li>
                     <li class="header-item"><a href="./portfolio.html" class="header-links link">Portfolio</a></li>
                     <li class="header-item"><a href="#Contacts" class="header-links link">Contacts</a></li>
                 </ul>
@@ -44,7 +44,7 @@
         <section class="hero section">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for You Business</h1>
-                <button type="button" class="hero-btn btn">Order Service</button>
+                <button type="button" data-modal-open class="hero-btn btn">Order Service</button>
             </div>
         </section>
         <!------------------ TEXT ------------------>
@@ -290,30 +290,40 @@
                 <h3 class="footer-head">Social media</h3>
                 <ul class="social-media-list list">
                     <li class="social-media-item"><a href="" class="social-media-link">
-                        <svg class="social-media-icon">
-                            <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                        </svg>
-                    </a></li>
+                            <svg class="social-media-icon">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
                     <li class="social-media-item"><a href="" class="social-media-link">
-                        <svg class="social-media-icon">
-                            <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                        </svg>
-                    </a></li>
+                            <svg class="social-media-icon">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a></li>
                     <li class="social-media-item"><a href="" class="social-media-link">
-                        <svg class="social-media-icon">
-                            <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                        </svg>
-                    </a></li>
+                            <svg class="social-media-icon">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
                     <li class="social-media-item"><a href="" class="social-media-link">
-                        <svg class="social-media-icon">
-                            <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                        </svg>
-                    </a></li>
+                            <svg class="social-media-icon">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a></li>
                 </ul>
             </div>
         </div>
-
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal" >
+            <button type="button" data-modal-close class="close-btn">
+                <svg class="close-icon" width="8px" height="8px">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 
 </body>
 
